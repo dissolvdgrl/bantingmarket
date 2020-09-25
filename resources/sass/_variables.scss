@@ -1,19 +1,11 @@
-// Body
-$body-bg: #f8fafc;
+// Colours
+$dark-green: #7BA982;
+$green: #DFEDC5;
+$red: #C90606;
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Fonts
+$din_reg: 'din_regular', sans-serif;
+$din_bold: 'din_bold', sans-serif;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+// Box shadow
+$drop-shadow:  0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 8px 8px rgba(0,0,0,0.05);

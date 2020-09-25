@@ -1,0 +1,37 @@
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+
+    nav {
+        position: relative;
+        overflow: visible;
+        position: absolute;
+    }
+
+    .nav-img:first-of-type {
+        top: -1rem;
+        right: -1rem;
+    }
+
+    .nav-img:last-of-type {
+        top: -2rem;
+        right: 10rem;
+    }
+
+    .nav-link {
+        transition: all 0.3s ease-in-out;
+        padding: 1rem;
+        &:hover {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}

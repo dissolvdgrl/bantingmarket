@@ -7,74 +7,55 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        @include('includes.nav')
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+        <header>
+            <div class="container grid">
+                @yield('header')
+            </div>
+        </header>
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+        <main id="content-container" class="mt-32">
+            <div class="container mx-auto my-8 w-4/5">
+                @yield('content')
+            </div>
+        </main>
+        <footer class="bg-black p-8">
+            <div class="container w-4/5 mx-auto">
+                <p class="text-xl text-white text-center">Join us at Brooklyn Mall for the highest quality banting, keto and all kinds of LCHF foods. Gluten-free, wheat-free and sugar-free!</p>
+                <p class="text-sm text-white text-center my-8">Brooklyn Mall is the new home for the Pretoria Banting Market, every first and third Saturday.</p>
+                <nav class="footer-nav">
+                    <a href="/" class="text-white">Home</a>
+                    <span class="text-lg mx-4">&#8212;</span>
+                    <a href="/info" class="text-white">Info</a>
+                    <span class="text-lg mx-4">&#8212;</span>
+                    <a href="/vendors" class="text-white">Vendors</a>
+                    <span class="text-lg mx-4">&#8212;</span>
+                    <a href="/recipes" class="text-white">Recipes</a>
+                    <span class="text-lg mx-4">&#8212;</span>
+                    <a href="/apply" class="text-white">Apply</a>
+                    <span class="text-lg mx-4">&#8212;</span>
+                    <a href="/contact" class="text-white">Contact</a>
+                </nav>
+                <div class="stripe-full bg-white my-4"></div>
+                <div class="footer-bottom">
+                    <a href="https://www.facebook.com/bantingmarketpretoria123/" target="_blank"><img src="{{ asset('images/facebook_icon.svg') }}" alt=""></a>
+                    <a href="https://www.instagram.com/bantingmarketpretoria/" target="_blank">                    <img src="{{ asset('images/instagram_icon.svg') }}" alt=""></a>
+                    <p class="text-white text-right text-xs">
+                        Copyright © 2020 Brooklyn's Banting Market. <br>
+                        Design & build by <a href="https://chilldsgn.com/" target="_blank" class="text-white underline">CHD</a>
+                    </p>
                 </div>
             </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        </footer>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

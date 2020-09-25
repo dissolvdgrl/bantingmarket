@@ -29,4 +29,16 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    data: {
+        menuText: "Menu"
+    },
+
+    methods: {
+        toggleMenu() {
+            const btn = document.querySelector('#menu');
+            btn.classList.toggle('menu-active');
+            this.menuText == "Close" ? this.menuText = "Menu"
+                                     : this.menuText = "Close";
+        }
+    }
 });
