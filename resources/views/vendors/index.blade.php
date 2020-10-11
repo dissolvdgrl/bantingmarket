@@ -15,7 +15,7 @@
     <p>Looking for the finest low-carb/banting/ketogenic foods? You've come to the right place! </p>
     <p class="mt-8">Don't forget your reusable shopping bags :)</p>
 
-    <div class="vendors-container">
+    <div class="vendors-container mt-8">
         @foreach ($vendors as $vendor)
             <x-vendor-card
                 name="{{ $vendor->name }}"

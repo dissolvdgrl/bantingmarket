@@ -16,10 +16,10 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+const files = require.context('./', true, /\.vue$/i)
+files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('email', require('./components/Email.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,7 +30,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
     data: {
-        menuText: "Menu"
+        menuText: "Menu",
+        slug: '',
+        understand: true,
+        terms: true
     },
 
     methods: {
@@ -39,6 +42,10 @@ const app = new Vue({
             btn.classList.toggle('menu-active');
             this.menuText == "Close" ? this.menuText = "Menu"
                                      : this.menuText = "Close";
+        },
+
+        slugify() {
+            this.slug = document.querySelector('#recipe_name').value.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
         }
     }
 });

@@ -21720,7 +21720,7 @@ p {
 
 #main-nav .menu-active {
   opacity: 1 !important;
-  height: 120% !important;
+  height: 100vh !important;
   width: 100% !important;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -21741,6 +21741,10 @@ p {
 
 #main-nav .logo {
   width: 100px;
+}
+
+.dashnav {
+  padding-top: 1rem !important;
 }
 
 #infobox {
@@ -21816,6 +21820,22 @@ p {
 
 .link:hover::after, .link:focus::after {
   margin-left: 0.5rem;
+}
+
+.link-back {
+  color: #7BA982;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.link-back::before {
+  content: "\2190";
+  margin-right: 0.25rem;
+  transition: all 0.2s ease-in;
+}
+
+.link-back:hover::before, .link-back:focus::before {
+  margin-right: 0.5rem;
 }
 
 header {
@@ -21928,7 +21948,6 @@ header h1 {
 }
 
 .card {
-  padding: 1rem;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
   margin-bottom: 2rem;
@@ -21992,12 +22011,194 @@ footer .footer-nav a, footer .footer-nav span {
 
 footer .footer-bottom {
   display: grid;
-  grid-template-columns: 20% 20% 40%;
+  grid-template-columns: 10% 10% 60%;
   justify-content: space-between;
 }
 
 footer .footer-bottom img:first-of-type {
   margin-bottom: 1rem;
+}
+
+.recipes-container .card {
+  overflow: hidden;
+}
+
+.recipes-container .card img {
+  max-width: 348px;
+}
+
+.recipe-img {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.05);
+}
+
+.submit-btn {
+  font-size: 1.25rem;
+  color: #7BA982;
+}
+
+.submit-btn::after {
+  content: "\2192";
+  margin-left: 0.25rem;
+  color: #000;
+  transition: all 0.2s ease-in;
+}
+
+.submit-btn:hover::after, .submit-btn:focus::after {
+  margin-left: 0.5rem;
+}
+
+.contact-details {
+  margin-top: 6rem;
+}
+
+.contact-details p.font-serif {
+  font-size: 1.5rem;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media a img {
+  width: 22px;
+  height: 22px;
+  margin-right: 1rem;
+}
+
+.vendor-form-container ul li {
+  margin-bottom: 1rem;
+}
+
+.large-checkbox-label {
+  position: relative;
+}
+
+.large-checkbox input[type=checkbox] {
+  display: none;
+}
+
+.large-checkbox input[type=checkbox] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  border: solid 1px black;
+}
+
+.large-checkbox input[type=checkbox]:checked + * {
+  color: #7BA982;
+}
+
+.large-checkbox input[type=checkbox]:checked + *::before {
+  content: "\2713";
+  color: white;
+  text-align: center;
+  background: #7BA982;
+  border-color: #7BA982;
+}
+
+.prev, .next {
+  margin-top: 50px;
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease all;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  color: #7BA982;
+}
+
+.tc-table {
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.tc-table tbody, .tc-table tr, .tc-table td {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.tc-table tr {
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.tc-table td {
+  padding: 1em 2em 1em 0;
+}
+
+.tc-table td:first-child {
+  font-weight: 700;
+}
+
+.products-table {
+  display: block;
+}
+
+.products-table thead, .products-table tbody, .products-table th, .products-table td, .products-table tr {
+  display: block;
+}
+
+.products-table thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.products-table tr {
+  border: 1px solid #ccc;
+}
+
+.products-table td {
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 1rem;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-table td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.products-table td:nth-of-type(1):before {
+  content: "Product name";
+  font-family: "din_bold", sans-serif;
+}
+
+.products-table td:nth-of-type(2):before {
+  content: "Ingredients";
+  font-family: "din_bold", sans-serif;
 }
 
 @media (min-width: 1280px) {

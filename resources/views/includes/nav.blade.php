@@ -8,6 +8,7 @@
         <div id="menu" class="flex">
             <a href="/" class="nav-link {{ Request::path() === '/' ? 'active-link' : '' }}">Home</a>
             <a href="/info" class="nav-link {{ Request::path() === 'info' ? 'active-link' : '' }}">Info</a>
+            <a href="/recipes" class="nav-link {{ Request::path() === 'recipes' ? 'active-link' : '' }}">Recipes</a>
             <a href="/vendors" class="nav-link {{ Request::path() === 'vendors' ? 'active-link' : '' }}">Vendors</a>
             <a href="/apply" class="nav-link {{ Request::path() === 'apply' ? 'active-link' : '' }}">Apply</a>
             <a href="/contact" class="nav-link {{ Request::path() === 'contact' ? 'active-link' : '' }}">Contact</a>
@@ -72,5 +73,10 @@
                 <span>9am - 2pm</span>
             </p>
         </div>
+        @if (session('status'))
+            <div class="alert alert-success bg-dg py-2">
+                <p class="text-2xl font-sansBold text-white">{{ session('status') }}</p>
+            </div>
+        @endif
     </div>
 </nav>

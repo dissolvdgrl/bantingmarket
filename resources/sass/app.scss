@@ -69,7 +69,7 @@ body {
 
     .menu-active {
         opacity: 1 !important;
-        height: 120% !important;
+        height: 100vh !important;
         width: 100% !important;
         background-color: rgba(0,0,0,0.8);
         display: flex;
@@ -91,6 +91,10 @@ body {
     .logo {
         width: 100px;
     }
+}
+
+.dashnav {
+    padding-top: 1rem !important;
 }
 
 #infobox {
@@ -170,6 +174,22 @@ body {
 
     &:hover::after, &:focus::after {
         margin-left: 0.5rem;
+    }
+}
+
+.link-back {
+    color: $dark-green;
+    font-weight: bold;
+    display: inline-block;
+
+    &::before {
+        content: "\2190";
+        margin-right: 0.25rem;
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover::before, &:focus::before {
+        margin-right: 0.5rem;
     }
 }
 
@@ -275,7 +295,6 @@ header {
 // Card
 
 .card {
-    padding: 1rem;
     box-shadow: $drop-shadow;
     background-color: #ffffff;
     margin-bottom: 2rem;
@@ -340,7 +359,7 @@ header {
 
         .footer-bottom {
             display: grid;
-            grid-template-columns: 20% 20% 40%;
+            grid-template-columns: 10% 10% 60%;
             justify-content: space-between;
 
             img:first-of-type {
@@ -348,5 +367,187 @@ header {
             }
         }
     }
+
+// Recipes
+    .recipes-container {
+        .card {
+            overflow: hidden;
+            img {
+                max-width: 348px;
+            }
+        }
+    }
+
+    .recipe-img {
+        box-shadow: $drop-shadow;
+    }
+
+// Contact form
+    .submit-btn {
+        font-size: 1.25rem;
+        color: $dark-green;
+
+        &::after {
+            content: "\2192";
+            margin-left: 0.25rem;
+            color: #000;
+            transition: all 0.2s ease-in;
+        }
+
+        &:hover, &:focus {
+            &::after {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    .contact-details {
+        margin-top: 6rem;
+
+        p.font-serif {
+            font-size: 1.5rem;
+        }
+    }
+
+    .social-media {
+        display: flex;
+
+        a img {
+            width: 22px;
+            height: 22px;
+            margin-right: 1rem;
+        }
+    }
+
+// Vendor application
+    .vendor-form-container {
+        ul li {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .large-checkbox-label {
+        position: relative;
+    }
+
+    .large-checkbox {
+        input[type="checkbox"] {
+            display: none;
+          }
+
+        input[type="checkbox"] + *::before {
+            content: "";
+            display: inline-block;
+            vertical-align: bottom;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+            border: solid 1px black;
+        }
+
+        input[type="checkbox"]:checked + * {
+            color: $dark-green;
+        }
+
+        input[type="checkbox"]:checked + *::before {
+            content: "✓";
+            color: white;
+            text-align: center;
+            background: $dark-green;
+            border-color: $dark-green;
+        }
+    }
+
+
+
+    .prev, .next {
+        margin-top: 50px;
+        cursor: pointer;
+        position: relative;
+        width: auto;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.2s ease all;
+        text-decoration: none;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .prev:hover, .next:hover {
+        color: $dark-green;
+    }
+
+    .tc-table {
+        border-collapse: collapse;
+        margin-bottom: 2em;
+        width: 100%;
+
+        tbody, tr, td {
+            margin: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        tr {
+            border-bottom: 2px solid rgb(200,200,200);
+        }
+
+        td {
+            padding: 1em 2em 1em 0 ;
+        }
+
+        td:first-child {
+            font-weight: 700;
+        }
+    }
+
+    .products-table {
+        display: block;
+        thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr { border: 1px solid #ccc; }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 1rem;
+            padding-top: 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        td:nth-of-type(1):before { content: "Product name"; font-family: $din_bold; }
+	    td:nth-of-type(2):before { content: "Ingredients"; font-family: $din_bold; }
+    }
+
 
 @import 'mediaqueries';

@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Vendor;
+use App\Http\Controllers\ContactFormSubmissionController;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@welcome');
+Route::get('/', function() {
+    $vendors = Vendor::select('logo')->inRandomOrder()->limit(4)->get();
+    return view('welcome', compact('vendors'));
+});
+
 Route::view('/info', 'info');
 Route::resource('/vendors', 'VendorsController');
+Route::view('/contact', 'contact');
+Route::post('/contact', 'FormsController@contact')->middleware(ProtectAgainstSpam::class);
+
+Route::View('/apply', 'apply');
+
+Route::resource('/recipes', 'RecipesController');
 
 Auth::routes();
 

@@ -1899,6 +1899,283 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _core_Form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/Form */ "./resources/js/core/Form.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: new _core_Form__WEBPACK_IMPORTED_MODULE_0__["default"]({
+        stall_name: '',
+        name_surname: '',
+        car_reg: '',
+        phone: '',
+        email: '',
+        address: '',
+        website: '',
+        facebook: '',
+        instagram: '',
+        produce_self: '',
+        products: [],
+        stand_type: '',
+        appliances: '',
+        use_gas: '',
+        social_media: ''
+      })
+    };
+  },
+  methods: {
+    addItem: function addItem() {
+      this.form.products.push({
+        name: '',
+        ingredients: ''
+      });
+    },
+    deleteItem: function deleteItem(index) {
+      this.form.products.splice(index, 1);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      slides: [{
+        title: "Application",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>Applications are reviewed by our management team and dietitians.</li>\n                            <li>It will be expected of each trader to acquaint themselves with the basic guidelines of the Banting, keto or LCHF lifestyle. Do NOT apply if you do not know what the Banting and Keto lifestyles imply.</li>\n                            <li>All applications are considered in the light of the following factors:</li>\n                            <li>How sellable the product is to our visitors</li>\n                            <li>Is it Banting and keto friendly</li>\n                            <li>To what extent does it overlap and impact other stallholders</li>\n                            <li>You will be informed via e-mail if your application was successful or not.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Bookings/Payment",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The application form is completed only once, you do not have to complete a new form for every market.</li>\n                            <li>Additions and alterations to your product range MUST be approved by management.</li>\n                            <li>When you receive an acceptance e-mail, your booking is only secured on payment of required stall fee.</li>\n                            <li>Stall fees must be paid in advance via electronic transfer, not later than the Monday preceding the market.</li>\n                            <li>Cash payments on market day must be approved by management at least a week before the market date. An additional admin fee of R30 will be charged on ALL cash payments.</li>\n                            <li>Once you have been accepted, you have been approved permanently and are expected to attend both markets every month.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Fees",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The cost of a stall is as follows:<br>\n                                <p class=\"font-sansBold\">3x3m stand</p>\n                                <p>R300 per Saturday, add R30 for cash payments on the day of the market.</p>\n                                <hr class=\"my-4\">\n                                <p class=\"font-sansBold\">3x3m stand + electricity</p>\n                                <p>R380 per Saturday, add R30 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>\n                            </li>\n                            <li>Fees go towards costs of venue rent, administration, marketing, salaries for workers to set-up on day, security, music entertainment and development of the market.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Trading time/Setup regulations",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>Market trading hours are from <strong>9am to 2pm</strong>.</li>\n                            <li>Set up from 6am until 8:15am.</li>\n                            <li>Vehicles may enter the market area and unload directly at your stall area after which the vehicle <strong>must then be moved to the designated parking area</strong>.</li>\n                            <li>No entry after <strong>8:15am</strong> for traders\u2019 vehicles to offload at the market.</li>\n                            <li>Vehicle must be unloaded and moved to designated trader parking area before <strong>8:15am</strong>.</li>\n                            <li>Traders arriving after 8:15am must park in the parking area and convey all the contents of their stalls on foot. You will not be allowed to unload directly at your stall.</li>\n                            <li>No cars allowed behind or near your stall. The market and surrounding area is to be kept car-free to ensure space for the clients.</li>\n                            <li>Traders who do not adhere to this rule, will receive a warning. A second warning at the next market, can result in losing your place at the market and not be allowed back at the market.</li>\n                            <li>Your stall must be fully set-up by <strong>8:45am</strong>. Be prepared for the early-bird clients even as early as 8am.</li>\n                            <li>Packing up of stalls is not permitted before <strong>2pm</strong>. All stalls <strong>must remain until closing time</strong>. Stalls must be kept neat and manned at all times</li>\n                            <li>If you are sold out before 2pm, put up a SOLD OUT sign and leave your table dressed up.</li>\n                            <li>No cars will be allowed to enter the market area before 2pm.</li>\n                            <li>Traders shall leave the area at the end of the market the way it was found. Pick up rubbish, waste, packaging, used serviettes, paper, etc surrounding your stall. You are welcome to use the allocated rubbish bins provided by management.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Your stall",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The venue layout will be sent to you a few days before the market. Your stall allocation will be clearly marked.</li>\n                            <li>Spaces are allocated at the sole discretion of the market management and will always be done to best fit the layout, look and feel of the market as a whole. As the market constantly grows, it can sometimes result in a change of your allocated spot. Please do not request shade or a specific space.</li>\n                            <li>Stallholders shall bring own tables, chairs, gazebos, tablecloths, extension cords, etc. Tables and chairs are NOT available to rent. As we are an indoor market, gazebo's are not compulsory. You are welcome to use a gazebo, though.</li>\n                            <li>Table cloths must cover the <strong>full front of the table</strong>. Put boxes and packaging material under the table. Stall must be kept in a clean and tidy condition throughout the market.</li>\n                            <li>Stallholders may display their products any way they choose, but shall not place goods and gazebos outside their designated areas.</li>\n                            <li>In the interest of keeping a high standard at our market, <strong>the styling and display of your stall at the market is vital.</strong> An eye-catching, professional and appealing set-up will draw customers to your stall. Display CLEARLY your stall name and what you sell. Price <strong>MUST</strong> be displayed.</li>\n                            <li>Take extra care when using gas to ensure safety of all. Portable fire extinguishers are required. NO open fires are allowed.</li>\n                            <li>It is advisable to obtain alternative ways, other than cash, to collect payment from customers. Sales may increase if cash is not the only alternative. (Credit card machines/Snapscan/Zapper, etc). All these methods are relatively easy to obtain. Yoco and iKhoka credit card machines charge a small percentage fee per transaction and require no monthly fee.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Public liability insurance",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>It is each trader\u2019s own responsibility to trade legally and safely at all times.</li>\n                            <li>Damage and/or injury caused by traders\u2019 products or stall is own responsibility and we thus advise that traders have their own public liability insurance.</li>\n                            <li>The Real Food Market management and Brooklyn Mall employees are not responsible for injury or accident caused by your product or exhibit, damage to or theft of your stock/property whilst you are attending our market.</li>\n                            <li>The trader shall indemnify the market management and Brooklyn Mall from and against any claims, demands, actions, debts, liabilities and attorney\u2019s fees arising out of, claimed on account of, or in any manner predicated upon loss or damage to the property or the injuries or the death of any and all persons whatsoever, in any manner caused or contributed to by the trader or the trader\u2019s employees while in, upon or about the property where in the stall is located, or while going to or departing from the same and to indemnify the market management from and or any account of damages of any kind which they may be suffered as the result of the acts of any of the market contractors, agents, or employees in or about the property the market is at.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Marketing",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>As with any event, we cannot guarantee visitor numbers but we will do our utmost to ensure that you have a successful market. Bad weather, load shedding or other interruptions is out of our control.</li>\n                            <li>We do extensive online marketing, advertising boards and banners are put up every week before the market and sometimes advertise in the printed media.</li>\n                            <li>We love to share pictures of the market and our traders on our social media pages, but please note that we only share quality pictures that is in line with our look and feel.</li>\n                            <li>You are <strong>required</strong> to like all our social media pages (Facebook, Instagram &amp; Twitter) and undertake to like and share our posts on a regular basis.</li>\n                            <li>Instagram is the social media platform that became extremely popular. Do your business a favour and sign up.</li>\n                            <li>You agree that we can take photos of your products/stall and that these photos can be shared on our social media pages.</li>\n                        </ul>\n                    "
+      }, {
+        title: "Cancellation",
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The market will always trade in all weather conditions. Should the market be cancelled in the event of <strong>extreme</strong> weather conditions, stallholders will receive a 50% credit that will be carried over to the next market date (only carried over once, if this market date not attended credit will be forfeited).</li>\n                            <li>Stall fees are non-refundable if cancelled at late notice, 5 days prior to market or without a valid reason.</li>\n                            <li>If you are unable to make it on market day, please let us know <strong>via telephone call</strong> as early as possible in the morning so that we can fill the space (open stall spaces look unprofessional and negative impact on market).</li>\n                            <li>If you have not arrived to trade and have also not contacted us to inform what has happened we will assume cancellation and you will not be able to apply again.</li>\n                        </ul>\n                    "
+      }],
+      currentIndex: 0
+    };
+  },
+  mounted: function mounted() {
+    currentIndex: 0;
+  },
+  methods: {
+    next: function next() {
+      this.currentIndex += 1;
+    },
+    prev: function prev() {
+      this.currentIndex -= 1;
+    }
+  },
+  computed: {
+    currentSlide: function currentSlide() {
+      return this.slides[Math.abs(this.currentIndex) % this.slides.length];
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Email.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Email.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      prefix: 'mailto:',
+      email: 'info@realfoodmarket.info'
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -37499,6 +37776,896 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "form",
+    { attrs: { id: "application-form", method: "POST", action: "applyForm" } },
+    [
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.stall_name,
+              expression: "form.stall_name"
+            }
+          ],
+          attrs: {
+            type: "text",
+            id: "stall_name",
+            name: "stall_name",
+            placeholder: "Stall/business name",
+            required: ""
+          },
+          domProps: { value: _vm.form.stall_name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "stall_name", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "stall_name" } }, [
+          _vm._v("Stall/Business name")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.name_surname,
+              expression: "form.name_surname"
+            }
+          ],
+          attrs: {
+            type: "text",
+            id: "name_surname",
+            name: "name_surname",
+            placeholder: "Your name & surname",
+            required: ""
+          },
+          domProps: { value: _vm.form.name_surname },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "name_surname", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "name_surname" } }, [
+          _vm._v("Name & surname")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.car_reg,
+              expression: "form.car_reg"
+            }
+          ],
+          attrs: {
+            type: "text",
+            id: "car_reg",
+            name: "car_reg",
+            placeholder: "Car registraton nr",
+            required: ""
+          },
+          domProps: { value: _vm.form.car_reg },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "car_reg", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "car_reg" } }, [
+          _vm._v("Car registration nr")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.phone,
+              expression: "form.phone"
+            }
+          ],
+          attrs: {
+            type: "text",
+            id: "phone",
+            name: "phone",
+            placeholder: "Phone",
+            required: ""
+          },
+          domProps: { value: _vm.form.phone },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "phone", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "phone" } }, [_vm._v("Phone")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.email,
+              expression: "form.email"
+            }
+          ],
+          attrs: {
+            type: "text",
+            id: "email",
+            name: "email",
+            placeholder: "Email",
+            required: ""
+          },
+          domProps: { value: _vm.form.email },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "email", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "email" } }, [_vm._v("Email")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.address,
+              expression: "form.address"
+            }
+          ],
+          attrs: {
+            id: "address",
+            name: "address",
+            placeholder: "Address",
+            required: ""
+          },
+          domProps: { value: _vm.form.address },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "address", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "address" } }, [_vm._v("Address")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.website,
+              expression: "form.website"
+            }
+          ],
+          attrs: {
+            type: "url",
+            id: "website",
+            name: "website",
+            placeholder: "https://www.example.com/"
+          },
+          domProps: { value: _vm.form.website },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "website", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "website" } }, [_vm._v("Website")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.facebook,
+              expression: "form.facebook"
+            }
+          ],
+          attrs: {
+            type: "url",
+            id: "facebook_page",
+            name: "facebook_page",
+            placeholder: "https://www.faceboom.com/your-page-name"
+          },
+          domProps: { value: _vm.form.facebook },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "facebook", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "facebook_page" } }, [
+          _vm._v("Facebook page")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.instagram,
+              expression: "form.instagram"
+            }
+          ],
+          attrs: {
+            type: "url",
+            id: "instagram_page",
+            name: "instagram_page",
+            placeholder: "https://www.instagram.com/your-profile-name/"
+          },
+          domProps: { value: _vm.form.instagram },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "instagram", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "instagram_page" } }, [
+          _vm._v("Instagram page")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "stripe bg-black mx-auto my-4" }),
+      _vm._v(" "),
+      _c("h2", [_vm._v("Product information")]),
+      _vm._v(" "),
+      _c("p", [_vm._v("Do you, the applicant, produce your products?")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.produce_self,
+              expression: "form.produce_self"
+            }
+          ],
+          attrs: {
+            type: "radio",
+            id: "producer",
+            name: "producer",
+            value: "Yes",
+            required: ""
+          },
+          domProps: { checked: _vm._q(_vm.form.produce_self, "Yes") },
+          on: {
+            change: function($event) {
+              return _vm.$set(_vm.form, "produce_self", "Yes")
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "producer" } }, [_vm._v("Yes")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.produce_self,
+              expression: "form.produce_self"
+            }
+          ],
+          attrs: {
+            type: "radio",
+            id: "producer",
+            name: "producer",
+            value: "No",
+            required: ""
+          },
+          domProps: { checked: _vm._q(_vm.form.produce_self, "No") },
+          on: {
+            change: function($event) {
+              return _vm.$set(_vm.form, "produce_self", "No")
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "producer" } }, [_vm._v("No")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c(
+          "p",
+          [
+            _vm._v(
+              "List all the products that you would like to sell at the market including your ingredients. Please give as much information as possible. Once application submitted you must please also e-mail pictures of all your products to "
+            ),
+            _c("email")
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("table", { staticClass: "products-table" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            { attrs: { id: "parent" } },
+            _vm._l(_vm.form.products, function(product, index) {
+              return _c("tr", { key: index }, [
+                _c("td", { staticClass: "products" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: product.name,
+                        expression: "product.name"
+                      }
+                    ],
+                    staticClass: "products-input",
+                    attrs: {
+                      type: "text",
+                      name: "products",
+                      placeholder: "Product",
+                      required: ""
+                    },
+                    domProps: { value: product.name },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(product, "name", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("td", { staticClass: "products" }, [
+                  _c("textarea", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: product.ingredients,
+                        expression: "product.ingredients"
+                      }
+                    ],
+                    staticClass: "products-input",
+                    attrs: {
+                      name: "ingredients",
+                      placeholder: "Ingredients",
+                      required: ""
+                    },
+                    domProps: { value: product.ingredients },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(product, "ingredients", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.deleteItem(index)
+                      }
+                    }
+                  },
+                  [_vm._v("×")]
+                )
+              ])
+            }),
+            0
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "span",
+            {
+              staticClass: "button-wrap left-align",
+              attrs: { id: "add-product" }
+            },
+            [
+              _c("span", { staticClass: "button-background green-border" }),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "button bg-dg", on: { click: _vm.addItem } },
+                [_vm._v("+ Add")]
+              )
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "stripe bg-black mx-auto my-4" }),
+      _vm._v(" "),
+      _c("h2", [_vm._v("Stand options")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.stand_type,
+              expression: "form.stand_type"
+            }
+          ],
+          attrs: {
+            type: "radio",
+            id: "stand-3m",
+            name: "stand_3m",
+            value: "3x3 stand"
+          },
+          domProps: { checked: _vm._q(_vm.form.stand_type, "3x3 stand") },
+          on: {
+            change: function($event) {
+              return _vm.$set(_vm.form, "stand_type", "3x3 stand")
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "stand-3m" } }, [_vm._v("3x3m stand")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.stand_type,
+              expression: "form.stand_type"
+            }
+          ],
+          attrs: {
+            type: "radio",
+            id: "stand-3m-elec",
+            name: "stand_3m_elec",
+            value: "stand with electricity"
+          },
+          domProps: {
+            checked: _vm._q(_vm.form.stand_type, "stand with electricity")
+          },
+          on: {
+            change: function($event) {
+              return _vm.$set(_vm.form, "stand_type", "stand with electricity")
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "stand-3m-elec" } }, [
+          _vm._v("3x3m stand + electricity")
+        ])
+      ]),
+      _vm._v(" "),
+      _vm.form.stand_type == "stand with electricity"
+        ? _c(
+            "div",
+            { staticClass: "form-group", attrs: { id: "appliance-type" } },
+            [
+              _c("label", { attrs: { for: "appliance" } }, [
+                _vm._v("What type of appliance(s) do you use?")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.form.appliances,
+                    expression: "form.appliances"
+                  }
+                ],
+                attrs: {
+                  type: "text",
+                  id: "appliance",
+                  name: "appliance",
+                  placeholder: "Eg. microwave"
+                },
+                domProps: { value: _vm.form.appliances },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.form, "appliances", $event.target.value)
+                  }
+                }
+              })
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.use_gas,
+              expression: "form.use_gas"
+            }
+          ],
+          attrs: { type: "checkbox", id: "gas", name: "gas" },
+          domProps: {
+            checked: Array.isArray(_vm.form.use_gas)
+              ? _vm._i(_vm.form.use_gas, null) > -1
+              : _vm.form.use_gas
+          },
+          on: {
+            change: function($event) {
+              var $$a = _vm.form.use_gas,
+                $$el = $event.target,
+                $$c = $$el.checked ? true : false
+              if (Array.isArray($$a)) {
+                var $$v = null,
+                  $$i = _vm._i($$a, $$v)
+                if ($$el.checked) {
+                  $$i < 0 && _vm.$set(_vm.form, "use_gas", $$a.concat([$$v]))
+                } else {
+                  $$i > -1 &&
+                    _vm.$set(
+                      _vm.form,
+                      "use_gas",
+                      $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                    )
+                }
+              } else {
+                _vm.$set(_vm.form, "use_gas", $$c)
+              }
+            }
+          }
+        }),
+        _vm._v(" "),
+        _c("label", { attrs: { for: "gas" } }, [
+          _vm._v(
+            "I use gas. I have read and understand the regulations and will adhere to it."
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "gas-warning" }, [
+          _vm._v("If you use gas, a fire extinguisher is compulsory.")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "social-media" } }, [
+          _vm._v("Have you liked/are you following our social media pages?")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.social_media,
+                expression: "form.social_media"
+              }
+            ],
+            attrs: { type: "radio", name: "social_yes", value: "Yes" },
+            domProps: { checked: _vm._q(_vm.form.social_media, "Yes") },
+            on: {
+              change: function($event) {
+                return _vm.$set(_vm.form, "social_media", "Yes")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "social_yes" } }, [_vm._v("Yes")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.social_media,
+                expression: "form.social_media"
+              }
+            ],
+            attrs: { type: "radio", name: "social_no", value: "No" },
+            domProps: { checked: _vm._q(_vm.form.social_media, "No") },
+            on: {
+              change: function($event) {
+                return _vm.$set(_vm.form, "social_media", "No")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "ocial_no" } }, [_vm._v("No")])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Products")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Ingredients")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("p", { staticClass: "body-text" }, [
+        _vm._v("By submitting this form I agree to the Terms and Conditions.")
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "form-submit-button button-wrap left-align",
+          attrs: { type: "submit", value: "submit" }
+        },
+        [
+          _c("span", { staticClass: "button-background green-border" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "button-text green" }, [_vm._v("Submit")])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "mt-8" },
+    [
+      _vm._l([_vm.currentIndex], function(i) {
+        return _c("div", { key: i }, [
+          _c("p", { staticClass: "font-sansBold text-2xl" }, [
+            _vm._v(
+              _vm._s(_vm.currentIndex + 1) +
+                ". " +
+                _vm._s(_vm.currentSlide.title)
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", {
+            staticClass: "mt-4",
+            domProps: { innerHTML: _vm._s(_vm.currentSlide.content) }
+          })
+        ])
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "slide-nav mb-4 flex justify-between" }, [
+        _vm.currentIndex != 0
+          ? _c(
+              "a",
+              {
+                staticClass: "prev",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.prev($event)
+                  }
+                }
+              },
+              [_vm._v("← Previous")]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.currentIndex < this.slides.length - 1
+          ? _c(
+              "a",
+              {
+                staticClass: "next self-end",
+                attrs: { href: "#" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.next($event)
+                  }
+                }
+              },
+              [_vm._v("Next →")]
+            )
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _vm.currentIndex == this.slides.length - 1
+        ? _c("div", { staticClass: "form-group" }, [
+            _c("label", { staticClass: "large-checkbox" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.$parent.terms,
+                    expression: "$parent.terms"
+                  }
+                ],
+                attrs: { type: "checkbox", name: "read_terms" },
+                domProps: {
+                  checked: Array.isArray(_vm.$parent.terms)
+                    ? _vm._i(_vm.$parent.terms, null) > -1
+                    : _vm.$parent.terms
+                },
+                on: {
+                  change: function($event) {
+                    var $$a = _vm.$parent.terms,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = null,
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 &&
+                          _vm.$set(_vm.$parent, "terms", $$a.concat([$$v]))
+                      } else {
+                        $$i > -1 &&
+                          _vm.$set(
+                            _vm.$parent,
+                            "terms",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
+                      }
+                    } else {
+                      _vm.$set(_vm.$parent, "terms", $$c)
+                    }
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "text-2xl" }, [
+                _vm._v("I have read and agree with the Terms and Conditions")
+              ])
+            ])
+          ])
+        : _vm._e()
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Email.vue?vue&type=template&id=50b99641&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Email.vue?vue&type=template&id=50b99641& ***!
+  \********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span", [
+    _c("a", { attrs: { href: this.prefix + this.email } }, [
+      _vm._v(_vm._s(this.email))
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -49708,6 +50875,42 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/js sync recursive \\.vue$/":
+/*!***********************************!*\
+  !*** ./resources/js sync \.vue$/ ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./components/ApplicationForm.vue": "./resources/js/components/ApplicationForm.vue",
+	"./components/ApplicationTerms.vue": "./resources/js/components/ApplicationTerms.vue",
+	"./components/Email.vue": "./resources/js/components/Email.vue",
+	"./components/ExampleComponent.vue": "./resources/js/components/ExampleComponent.vue"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js sync recursive \\.vue$/";
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -49730,10 +50933,13 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
+var files = __webpack_require__("./resources/js sync recursive \\.vue$/");
+
+files.keys().map(function (key) {
+  return Vue.component(key.split('/').pop().split('.')[0], files(key)["default"]);
+}); //Vue.component('email', require('./components/Email.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -49743,13 +50949,19 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app',
   data: {
-    menuText: "Menu"
+    menuText: "Menu",
+    slug: '',
+    understand: true,
+    terms: true
   },
   methods: {
     toggleMenu: function toggleMenu() {
       var btn = document.querySelector('#menu');
       btn.classList.toggle('menu-active');
       this.menuText == "Close" ? this.menuText = "Menu" : this.menuText = "Close";
+    },
+    slugify: function slugify() {
+      this.slug = document.querySelector('#recipe_name').value.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
     }
   }
 });
@@ -49798,6 +51010,213 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationForm.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/ApplicationForm.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ApplicationForm.vue?vue&type=template&id=18879ece& */ "./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece&");
+/* harmony import */ var _ApplicationForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ApplicationForm.vue?vue&type=script&lang=js& */ "./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ApplicationForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ApplicationForm.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ApplicationForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationForm.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece& ***!
+  \************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ApplicationForm.vue?vue&type=template&id=18879ece& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationForm.vue?vue&type=template&id=18879ece&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationForm_vue_vue_type_template_id_18879ece___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationTerms.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/ApplicationTerms.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ApplicationTerms.vue?vue&type=template&id=d73055fc& */ "./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc&");
+/* harmony import */ var _ApplicationTerms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ApplicationTerms.vue?vue&type=script&lang=js& */ "./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ApplicationTerms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ApplicationTerms.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationTerms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ApplicationTerms.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationTerms.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationTerms_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc& ***!
+  \*************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ApplicationTerms.vue?vue&type=template&id=d73055fc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ApplicationTerms.vue?vue&type=template&id=d73055fc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ApplicationTerms_vue_vue_type_template_id_d73055fc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Email.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Email.vue ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Email.vue?vue&type=template&id=50b99641& */ "./resources/js/components/Email.vue?vue&type=template&id=50b99641&");
+/* harmony import */ var _Email_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Email.vue?vue&type=script&lang=js& */ "./resources/js/components/Email.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Email_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Email.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Email.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Email.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Email_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Email.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Email.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Email_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Email.vue?vue&type=template&id=50b99641&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Email.vue?vue&type=template&id=50b99641& ***!
+  \**************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Email.vue?vue&type=template&id=50b99641& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Email.vue?vue&type=template&id=50b99641&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Email_vue_vue_type_template_id_50b99641___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -49867,6 +51286,173 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/js/core/Errors.js":
+/*!*************************************!*\
+  !*** ./resources/js/core/Errors.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Errors = /*#__PURE__*/function () {
+  // create a new Errors instance
+  function Errors() {
+    _classCallCheck(this, Errors);
+
+    this.errors = {};
+  } // Determine if an error exists for the given field
+
+
+  _createClass(Errors, [{
+    key: "has",
+    value: function has(field) {
+      return this.errors.hasOwnProperty(field);
+    }
+  }, {
+    key: "any",
+    value: function any() {
+      return Object.keys(this.errors).length > 0;
+    } // Retrieve the error message for a field
+
+  }, {
+    key: "get",
+    value: function get(field) {
+      if (this.errors[field]) {
+        return this.errors[field][0];
+      }
+    } // Record new errors
+
+  }, {
+    key: "record",
+    value: function record(errors) {
+      this.errors = errors;
+    } // Clear one or all error fields
+
+  }, {
+    key: "clear",
+    value: function clear(field) {
+      if (field) {
+        delete this.errors[field];
+        return;
+      } //this.errors = {};
+
+    }
+  }]);
+
+  return Errors;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Errors);
+
+/***/ }),
+
+/***/ "./resources/js/core/Form.js":
+/*!***********************************!*\
+  !*** ./resources/js/core/Form.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Errors */ "./resources/js/core/Errors.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var Form = /*#__PURE__*/function () {
+  // Create a new Form instance
+  function Form(data) {
+    _classCallCheck(this, Form);
+
+    this.originalData = data;
+
+    for (var field in data) {
+      this[field] = data[field];
+    }
+
+    this.errors = new _Errors__WEBPACK_IMPORTED_MODULE_0__["default"]();
+  } // Fetch all relevant data for the form
+
+
+  _createClass(Form, [{
+    key: "data",
+    value: function data() {
+      var data = {};
+
+      for (var property in this.originalData) {
+        data[property] = this[property];
+      }
+
+      return data;
+    } // Reset the form fields
+
+  }, {
+    key: "reset",
+    value: function reset() {
+      for (var field in this.originalData) {
+        this[field] = '';
+      }
+
+      this.errors.clear();
+    } // Send a POST request to the given URL
+
+  }, {
+    key: "post",
+    value: function post(url) {
+      return this.submit('post', url);
+    } // Submit the form
+
+  }, {
+    key: "submit",
+    value: function submit(requestType, url) {
+      var _this = this;
+
+      return new Promise(function (resolve, reject) {
+        axios[requestType](url, _this.data()).then(function (response) {
+          _this.onSuccess(response.data);
+
+          resolve(response.data);
+        })["catch"](function (error) {
+          _this.onFail(error.response.data.errors);
+
+          reject(error.response.data.errors);
+        });
+      });
+    } // Handle a successful form submission
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(data) {
+      data.message;
+      this.reset();
+    } // Handle a failed form submission
+
+  }, {
+    key: "onFail",
+    value: function onFail(errors) {
+      this.errors.record(errors);
+    }
+  }]);
+
+  return Form;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Form);
 
 /***/ }),
 

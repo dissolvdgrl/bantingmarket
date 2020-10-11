@@ -14,13 +14,7 @@
 </head>
 <body>
     <div id="app">
-        @include('includes.nav')
-
-        <header>
-            <div class="container grid">
-                @yield('header')
-            </div>
-        </header>
+        @include('includes.dashnav')
 
         <main id="content-container" class="mt-32">
             <div class="container mx-auto my-8 w-4/5">

@@ -17,6 +17,7 @@
     <p class="font-serif text-2xl italic mt-8">We prefer the products to be grown, baked and processed by the stallholder.</p>
     <p class="my-8">The Banting Market is the true answer to healthy food not found in supermarket shopping. You can create an entire meal by purchasing from our selected vendors!</p>
     <p class="my-8">Bring your reusable shopping bags too :)</p>
+    <p class="my-8">Unfortunately no pets are allowed.</p>
 
     <p class="text-sm text-center mt-32">Don't miss out!</p>
     <h1 class="font-bold text-center">Stay up to date</h1>
