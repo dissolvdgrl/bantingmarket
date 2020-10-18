@@ -24,9 +24,12 @@ Route::get('/', function() {
 Route::view('/info', 'info');
 Route::resource('/vendors', 'VendorsController');
 Route::view('/contact', 'contact');
-Route::post('/contact', 'FormsController@contact')->middleware(ProtectAgainstSpam::class);
+Route::post('/contact', 'FormsController@contact')
+    ->middleware('throttle:1,60')
+    ->middleware(ProtectAgainstSpam::class);
 
 Route::View('/apply', 'apply');
+Route::post('/apply', 'FormsController@apply')/*->middleware('throttle:1,1440') */;
 
 Route::resource('/recipes', 'RecipesController');
 

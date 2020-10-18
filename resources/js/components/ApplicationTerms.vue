@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-8">
+    <div class="mt-8" id="trade_terms">
         <div v-for="i in [currentIndex]" :key="i">
-            <p class="font-sansBold text-2xl">{{ currentIndex + 1 }}. {{ currentSlide.title }}</p>
+            <p class="font-sansBold text-2xl">{{ currentIndex + 1 }} / {{ slides.length }}. {{ currentSlide.title }}</p>
             <p v-html="currentSlide.content" class="mt-4"></p>
         </div>
         <div class="slide-nav mb-4 flex justify-between">
-            <a class="prev" @click.prevent="prev" href="#" v-if="currentIndex != 0">&larr; Previous</a>
-            <a class="next self-end" @click.prevent="next" href="#" v-if="currentIndex < this.slides.length-1">Next &rarr;</a>
+            <a class="prev button bg-black" @click.prevent="prev" href="#" v-if="currentIndex != 0">&larr; Previous</a>
+            <a class="next self-end button bg-black" @click.prevent="next" href="#" v-if="currentIndex < this.slides.length-1">Next &rarr;</a>
         </div>
 
         <div class="form-group" v-if="currentIndex == this.slides.length-1">
@@ -55,10 +55,10 @@ export default {
                     content: `
                         <ul class="list-disc pl-4">
                             <li>The cost of a stall is as follows:<br>
-                                <p class="font-sansBold">3x3m stand</p>
+                                <p class="font-sansBold">3x2.5m stand</p>
                                 <p>R300 per Saturday, add R30 for cash payments on the day of the market.</p>
                                 <hr class="my-4">
-                                <p class="font-sansBold">3x3m stand + electricity</p>
+                                <p class="font-sansBold">3x2.5m stand + electricity</p>
                                 <p>R380 per Saturday, add R30 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>
                             </li>
                             <li>Fees go towards costs of venue rent, administration, marketing, salaries for workers to set-up on day, security, music entertainment and development of the market.</li>
@@ -146,9 +146,11 @@ export default {
 
     methods: {
         next: function() {
+            document.querySelector('#trade_terms').scrollIntoView();
             this.currentIndex += 1;
         },
         prev: function() {
+            document.querySelector('#trade_terms').scrollIntoView();
             this.currentIndex -= 1;
         }
     },

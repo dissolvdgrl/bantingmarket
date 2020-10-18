@@ -16,14 +16,14 @@
     <div id="app">
         @include('includes.nav')
 
-        <header>
+        <header class="site-header">
             <div class="container grid">
                 @yield('header')
             </div>
         </header>
 
         <main id="content-container" class="mt-32">
-            <div class="container mx-auto my-8 w-4/5">
+            <div class="container mx-auto my-8">
                 @yield('content')
             </div>
         </main>

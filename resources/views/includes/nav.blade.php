@@ -14,7 +14,7 @@
             <a href="/contact" class="nav-link {{ Request::path() === 'contact' ? 'active-link' : '' }}">Contact</a>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
+            {{-- <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item">
@@ -44,13 +44,13 @@
                         </div>
                     </li>
                 @endguest
-            </ul>
+            </ul> --}}
         </div>
     </div>
     <div id="infobox">
-        <img src="{{ asset('images/blob_1.svg') }}" alt="">
+        <img src="{{ asset('images/blob_1.svg') }}" alt="" class="blob_1">
         <div id="next-market">
-            <img src="{{ asset('images/flowers_1.svg') }}" alt="">
+            <img src="{{ asset('images/flowers_1.svg') }}" alt="" class="flowers">
             <p class="font-serif text-white">Next Market</p>
             <p class="font-sans text-2xl text-white">
                 <span>

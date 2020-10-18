@@ -4,7 +4,7 @@
 
 @section('header')
     <p class="header-small justify-self-start">Talk to us</p>
-    <h1 class="justify-self-start">It's okay to<span class="font-bold"> have questions :</span></h1>
+    <h1 class="justify-self-start">It's okay to<span class="font-bold"> have questions :)</span></h1>
     <div class="bg-black sub-heading p-4 justify-self-start">
         <p class="text-white">Ask us anything</p>
         <img src="{{ asset('/images/flowers_2.svg') }}" alt="decorative flowers illustration">
@@ -40,20 +40,20 @@
                 <button type="submit" class="submit-btn p-2">Submit</button>
             </div>
         </form>
-    </div>
 
-    <div class="contact-details">
-        <p class="font-serif font-bold leading-none">079 527 4902</p>
-        <p class="text-dg text-sm">Phone</p>
-        <p class="font-serif font-bold leading-none mt-8"><email></email></p>
-        <p class="text-dg text-sm">Email</p>
-        <div class="social-media mt-8">
-            <a href="https://www.facebook.com/bantingmarketpretoria123/" target="_blank">
-                <img src="{{ asset('images/facebook_icon_black.svg') }}" alt="">
-            </a>
-            <a href="https://www.instagram.com/bantingmarketpretoria/" target="_blank">
-                <img src="{{ asset('images/instagram_icon_black.svg') }}" alt="">
-            </a>
+        <div class="contact-details">
+            <p class="font-serif font-bold leading-none">079 527 4902</p>
+            <p class="text-dg text-sm">Phone</p>
+            <p class="font-serif font-bold leading-none mt-8"><email></email></p>
+            <p class="text-dg text-sm">Email</p>
+            <div class="social-media mt-8">
+                <a href="https://www.facebook.com/bantingmarketpretoria123/" target="_blank">
+                    <img src="{{ asset('images/facebook_icon_black.svg') }}" alt="">
+                </a>
+                <a href="https://www.instagram.com/bantingmarketpretoria/" target="_blank">
+                    <img src="{{ asset('images/instagram_icon_black.svg') }}" alt="">
+                </a>
+            </div>
         </div>
     </div>
 @endsection

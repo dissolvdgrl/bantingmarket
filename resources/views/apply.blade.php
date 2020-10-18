@@ -13,7 +13,7 @@
 
 @section('content')
     <p class="font-serif text-2xl italic mt-8">To start your application to sell products at the market,        please check out the requirements below.</p>
-    <p class="text-3xl my-8">Please read carefully, we will disqualfy any application without notice which does not adhere to our guidelines.</p>
+    <p class="text-3xl my-8">Please read carefully, we will disqualify any application without notice which does not adhere to our guidelines.</p>
     <p class="my-8">Once you've gone through them all, you will have access to the form.</p>
 
     <div class="vendor-form-container card p-8">
@@ -28,7 +28,7 @@
         </ul>
 
         <p class="text-warning font-sansBold text-xl">DO NOT APPLY IF YOU SELL:</p>
-        <ul class="list-disc pl-4 mt-8">
+        <ul class="list-disc pl-4 mt-8 app-form-no-sell">
             <li>Weight loss products</li>
             <li>Herbalife</li>
             <li>Aloe Ferox with longs lists of ingredients</li>
@@ -52,7 +52,7 @@
         <div class="application-form" v-if="this.understand == true">
             <application-terms/>
         </div>
-        <application-form  />{{--  v-if="this.terms == true" --}}
+        <application-form v-if="this.terms == true"><application-form />
 
     </div>
 @endsection

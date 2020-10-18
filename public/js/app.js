@@ -2032,6 +2032,233 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2064,6 +2291,16 @@ __webpack_require__.r(__webpack_exports__);
     },
     deleteItem: function deleteItem(index) {
       this.form.products.splice(index, 1);
+    },
+    onSubmit: function onSubmit() {
+      var submitBtn = document.querySelector('#submit-btn');
+      submitBtn.innerText = "Sending...";
+      this.form.post('/apply').then(function (response) {
+        document.querySelector('.vendor-form-container').innerHTML = "\n                    <div class=\"alert alert-success bg-dg p-2\">\n                        <p class=\"text-2xl font-sansBold text-white\">".concat(response[1], "</p>\n                    </div>\n                ");
+        document.querySelector('.alert-success').scrollIntoView();
+      })["catch"](function (error) {
+        submitBtn.innerText = "Send";
+      });
     }
   }
 });
@@ -2110,7 +2347,7 @@ __webpack_require__.r(__webpack_exports__);
         content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The application form is completed only once, you do not have to complete a new form for every market.</li>\n                            <li>Additions and alterations to your product range MUST be approved by management.</li>\n                            <li>When you receive an acceptance e-mail, your booking is only secured on payment of required stall fee.</li>\n                            <li>Stall fees must be paid in advance via electronic transfer, not later than the Monday preceding the market.</li>\n                            <li>Cash payments on market day must be approved by management at least a week before the market date. An additional admin fee of R30 will be charged on ALL cash payments.</li>\n                            <li>Once you have been accepted, you have been approved permanently and are expected to attend both markets every month.</li>\n                        </ul>\n                    "
       }, {
         title: "Fees",
-        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The cost of a stall is as follows:<br>\n                                <p class=\"font-sansBold\">3x3m stand</p>\n                                <p>R300 per Saturday, add R30 for cash payments on the day of the market.</p>\n                                <hr class=\"my-4\">\n                                <p class=\"font-sansBold\">3x3m stand + electricity</p>\n                                <p>R380 per Saturday, add R30 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>\n                            </li>\n                            <li>Fees go towards costs of venue rent, administration, marketing, salaries for workers to set-up on day, security, music entertainment and development of the market.</li>\n                        </ul>\n                    "
+        content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>The cost of a stall is as follows:<br>\n                                <p class=\"font-sansBold\">3x2.5m stand</p>\n                                <p>R300 per Saturday, add R30 for cash payments on the day of the market.</p>\n                                <hr class=\"my-4\">\n                                <p class=\"font-sansBold\">3x2.5m stand + electricity</p>\n                                <p>R380 per Saturday, add R30 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>\n                            </li>\n                            <li>Fees go towards costs of venue rent, administration, marketing, salaries for workers to set-up on day, security, music entertainment and development of the market.</li>\n                        </ul>\n                    "
       }, {
         title: "Trading time/Setup regulations",
         content: "\n                        <ul class=\"list-disc pl-4\">\n                            <li>Market trading hours are from <strong>9am to 2pm</strong>.</li>\n                            <li>Set up from 6am until 8:15am.</li>\n                            <li>Vehicles may enter the market area and unload directly at your stall area after which the vehicle <strong>must then be moved to the designated parking area</strong>.</li>\n                            <li>No entry after <strong>8:15am</strong> for traders\u2019 vehicles to offload at the market.</li>\n                            <li>Vehicle must be unloaded and moved to designated trader parking area before <strong>8:15am</strong>.</li>\n                            <li>Traders arriving after 8:15am must park in the parking area and convey all the contents of their stalls on foot. You will not be allowed to unload directly at your stall.</li>\n                            <li>No cars allowed behind or near your stall. The market and surrounding area is to be kept car-free to ensure space for the clients.</li>\n                            <li>Traders who do not adhere to this rule, will receive a warning. A second warning at the next market, can result in losing your place at the market and not be allowed back at the market.</li>\n                            <li>Your stall must be fully set-up by <strong>8:45am</strong>. Be prepared for the early-bird clients even as early as 8am.</li>\n                            <li>Packing up of stalls is not permitted before <strong>2pm</strong>. All stalls <strong>must remain until closing time</strong>. Stalls must be kept neat and manned at all times</li>\n                            <li>If you are sold out before 2pm, put up a SOLD OUT sign and leave your table dressed up.</li>\n                            <li>No cars will be allowed to enter the market area before 2pm.</li>\n                            <li>Traders shall leave the area at the end of the market the way it was found. Pick up rubbish, waste, packaging, used serviettes, paper, etc surrounding your stall. You are welcome to use the allocated rubbish bins provided by management.</li>\n                        </ul>\n                    "
@@ -2135,9 +2372,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     next: function next() {
+      document.querySelector('#trade_terms').scrollIntoView();
       this.currentIndex += 1;
     },
     prev: function prev() {
+      document.querySelector('#trade_terms').scrollIntoView();
       this.currentIndex -= 1;
     }
   },
@@ -37791,687 +38030,1023 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "form",
-    { attrs: { id: "application-form", method: "POST", action: "applyForm" } },
-    [
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.stall_name,
-              expression: "form.stall_name"
-            }
-          ],
-          attrs: {
-            type: "text",
-            id: "stall_name",
-            name: "stall_name",
-            placeholder: "Stall/business name",
-            required: ""
+  return _c("div", { staticClass: "form-container" }, [
+    _c(
+      "form",
+      {
+        attrs: { id: "application-form", method: "POST", action: "apply" },
+        on: {
+          change: function($event) {
+            return _vm.form.errors.clear($event.target.name)
           },
-          domProps: { value: _vm.form.stall_name },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+          submit: function($event) {
+            $event.preventDefault()
+            return _vm.onSubmit($event)
+          }
+        }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.stall_name,
+                expression: "form.stall_name"
               }
-              _vm.$set(_vm.form, "stall_name", $event.target.value)
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "stall_name" } }, [
-          _vm._v("Stall/Business name")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.name_surname,
-              expression: "form.name_surname"
-            }
-          ],
-          attrs: {
-            type: "text",
-            id: "name_surname",
-            name: "name_surname",
-            placeholder: "Your name & surname",
-            required: ""
-          },
-          domProps: { value: _vm.form.name_surname },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("stall_name") },
+            attrs: {
+              type: "text",
+              id: "stall_name",
+              name: "stall_name",
+              placeholder: "Stall/business name"
+            },
+            domProps: { value: _vm.form.stall_name },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("stall_name")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "stall_name", $event.target.value)
               }
-              _vm.$set(_vm.form, "name_surname", $event.target.value)
             }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(1)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "name_surname" } }, [
-          _vm._v("Name & surname")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.car_reg,
-              expression: "form.car_reg"
-            }
-          ],
-          attrs: {
-            type: "text",
-            id: "car_reg",
-            name: "car_reg",
-            placeholder: "Car registraton nr",
-            required: ""
-          },
-          domProps: { value: _vm.form.car_reg },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.name_surname,
+                expression: "form.name_surname"
               }
-              _vm.$set(_vm.form, "car_reg", $event.target.value)
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "car_reg" } }, [
-          _vm._v("Car registration nr")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.phone,
-              expression: "form.phone"
-            }
-          ],
-          attrs: {
-            type: "text",
-            id: "phone",
-            name: "phone",
-            placeholder: "Phone",
-            required: ""
-          },
-          domProps: { value: _vm.form.phone },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("name_surname") },
+            attrs: {
+              type: "text",
+              id: "name_surname",
+              name: "name_surname",
+              placeholder: "Your name & surname"
+            },
+            domProps: { value: _vm.form.name_surname },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("name_surname")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "name_surname", $event.target.value)
               }
-              _vm.$set(_vm.form, "phone", $event.target.value)
             }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(2)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "phone" } }, [_vm._v("Phone")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.email,
-              expression: "form.email"
-            }
-          ],
-          attrs: {
-            type: "text",
-            id: "email",
-            name: "email",
-            placeholder: "Email",
-            required: ""
-          },
-          domProps: { value: _vm.form.email },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.car_reg,
+                expression: "form.car_reg"
               }
-              _vm.$set(_vm.form, "email", $event.target.value)
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "email" } }, [_vm._v("Email")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.address,
-              expression: "form.address"
-            }
-          ],
-          attrs: {
-            id: "address",
-            name: "address",
-            placeholder: "Address",
-            required: ""
-          },
-          domProps: { value: _vm.form.address },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("car_reg") },
+            attrs: {
+              type: "text",
+              id: "car_reg",
+              name: "car_reg",
+              placeholder: "Car registraton nr"
+            },
+            domProps: { value: _vm.form.car_reg },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("car_reg")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "car_reg", $event.target.value)
               }
-              _vm.$set(_vm.form, "address", $event.target.value)
             }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(3)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "address" } }, [_vm._v("Address")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.website,
-              expression: "form.website"
-            }
-          ],
-          attrs: {
-            type: "url",
-            id: "website",
-            name: "website",
-            placeholder: "https://www.example.com/"
-          },
-          domProps: { value: _vm.form.website },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.phone,
+                expression: "form.phone"
               }
-              _vm.$set(_vm.form, "website", $event.target.value)
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "website" } }, [_vm._v("Website")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.facebook,
-              expression: "form.facebook"
-            }
-          ],
-          attrs: {
-            type: "url",
-            id: "facebook_page",
-            name: "facebook_page",
-            placeholder: "https://www.faceboom.com/your-page-name"
-          },
-          domProps: { value: _vm.form.facebook },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("phone") },
+            attrs: {
+              type: "text",
+              id: "phone",
+              name: "phone",
+              placeholder: "Phone"
+            },
+            domProps: { value: _vm.form.phone },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("phone")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "phone", $event.target.value)
               }
-              _vm.$set(_vm.form, "facebook", $event.target.value)
             }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(4)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "facebook_page" } }, [
-          _vm._v("Facebook page")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.instagram,
-              expression: "form.instagram"
-            }
-          ],
-          attrs: {
-            type: "url",
-            id: "instagram_page",
-            name: "instagram_page",
-            placeholder: "https://www.instagram.com/your-profile-name/"
-          },
-          domProps: { value: _vm.form.instagram },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.email,
+                expression: "form.email"
               }
-              _vm.$set(_vm.form, "instagram", $event.target.value)
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("email") },
+            attrs: {
+              type: "text",
+              id: "email",
+              name: "email",
+              placeholder: "Email"
+            },
+            domProps: { value: _vm.form.email },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("email")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "email", $event.target.value)
+              }
             }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(5)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "instagram_page" } }, [
-          _vm._v("Instagram page")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "stripe bg-black mx-auto my-4" }),
-      _vm._v(" "),
-      _c("h2", [_vm._v("Product information")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("Do you, the applicant, produce your products?")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.produce_self,
-              expression: "form.produce_self"
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.address,
+                expression: "form.address"
+              }
+            ],
+            staticClass: "border-b border-black mb-1",
+            class: { errorBorder: _vm.form.errors.has("address") },
+            attrs: { id: "address", name: "address", placeholder: "Address" },
+            domProps: { value: _vm.form.address },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("address")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "address", $event.target.value)
+              }
             }
-          ],
-          attrs: {
-            type: "radio",
-            id: "producer",
-            name: "producer",
-            value: "Yes",
-            required: ""
-          },
-          domProps: { checked: _vm._q(_vm.form.produce_self, "Yes") },
-          on: {
-            change: function($event) {
-              return _vm.$set(_vm.form, "produce_self", "Yes")
-            }
-          }
-        }),
+          }),
+          _vm._v(" "),
+          _vm._m(6)
+        ]),
         _vm._v(" "),
-        _c("label", { attrs: { for: "producer" } }, [_vm._v("Yes")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.produce_self,
-              expression: "form.produce_self"
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.website,
+                expression: "form.website"
+              }
+            ],
+            staticClass: "border-b border-black mb-1",
+            attrs: {
+              type: "url",
+              id: "website",
+              name: "website",
+              placeholder: "https://example.com/"
+            },
+            domProps: { value: _vm.form.website },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("website")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "website", $event.target.value)
+              }
             }
-          ],
-          attrs: {
-            type: "radio",
-            id: "producer",
-            name: "producer",
-            value: "No",
-            required: ""
-          },
-          domProps: { checked: _vm._q(_vm.form.produce_self, "No") },
-          on: {
-            change: function($event) {
-              return _vm.$set(_vm.form, "produce_self", "No")
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "producer" } }, [_vm._v("No")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c(
-          "p",
-          [
-            _vm._v(
-              "List all the products that you would like to sell at the market including your ingredients. Please give as much information as possible. Once application submitted you must please also e-mail pictures of all your products to "
-            ),
-            _c("email")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("table", { staticClass: "products-table" }, [
-          _vm._m(0),
+          }),
           _vm._v(" "),
           _c(
-            "tbody",
-            { attrs: { id: "parent" } },
-            _vm._l(_vm.form.products, function(product, index) {
-              return _c("tr", { key: index }, [
-                _c("td", { staticClass: "products" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: product.name,
-                        expression: "product.name"
-                      }
-                    ],
-                    staticClass: "products-input",
-                    attrs: {
-                      type: "text",
-                      name: "products",
-                      placeholder: "Product",
-                      required: ""
-                    },
-                    domProps: { value: product.name },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+            "label",
+            { staticClass: "font-sansBold", attrs: { for: "website" } },
+            [_vm._v("\n                Website\n            ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.facebook,
+                expression: "form.facebook"
+              }
+            ],
+            staticClass: "border-b border-black mb-1",
+            attrs: {
+              type: "url",
+              id: "facebook_page",
+              name: "facebook_page",
+              placeholder: "https://faceboom.com/your-page-name"
+            },
+            domProps: { value: _vm.form.facebook },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("facebook")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "facebook", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "font-sansBold", attrs: { for: "facebook_page" } },
+            [_vm._v("\n                Facebook page\n            ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.instagram,
+                expression: "form.instagram"
+              }
+            ],
+            staticClass: "border-b border-black mb-1",
+            attrs: {
+              type: "url",
+              id: "instagram_page",
+              name: "instagram_page",
+              placeholder: "https://instagram.com/your-profile-name/"
+            },
+            domProps: { value: _vm.form.instagram },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("instagram")
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "instagram", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "font-sansBold", attrs: { for: "instagram_page" } },
+            [_vm._v("\n                Instagram page\n            ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "font-sansBold text-3xl mt-8 leading-none" }, [
+          _vm._v("Product information")
+        ]),
+        _vm._v(" "),
+        _vm._m(7),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group my-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.produce_self,
+                expression: "form.produce_self"
+              }
+            ],
+            staticClass: "mr-2",
+            class: { errorBorder: _vm.form.errors.has("produce_self") },
+            attrs: {
+              type: "radio",
+              id: "producer",
+              name: "produce_self",
+              value: "Yes"
+            },
+            domProps: { checked: _vm._q(_vm.form.produce_self, "Yes") },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("produce_self")
+              },
+              change: function($event) {
+                return _vm.$set(_vm.form, "produce_self", "Yes")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "producer" } }, [_vm._v("Yes")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.produce_self,
+                expression: "form.produce_self"
+              }
+            ],
+            staticClass: "mr-2",
+            class: { errorBorder: _vm.form.errors.has("produce_self") },
+            attrs: {
+              type: "radio",
+              id: "producer",
+              name: "produce_self",
+              value: "No"
+            },
+            domProps: { checked: _vm._q(_vm.form.produce_self, "No") },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("produce_self")
+              },
+              change: function($event) {
+                return _vm.$set(_vm.form, "produce_self", "No")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { attrs: { for: "producer" } }, [_vm._v("No")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c(
+            "p",
+            { staticClass: "mb-8" },
+            [
+              _vm._v(
+                "List all the products that you would like to sell at the market including your ingredients. Please give as much information as possible. Once application submitted you must please also e-mail pictures of all your products to "
+              ),
+              _c("email")
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "font-sansBold" }, [_vm._v("My products")]),
+          _vm._v(" "),
+          _c("table", { staticClass: "products-table" }, [
+            _vm._m(8),
+            _vm._v(" "),
+            _c(
+              "tbody",
+              { attrs: { id: "parent" } },
+              _vm._l(_vm.form.products, function(product, index) {
+                return _c("tr", { key: index }, [
+                  _c("td", { staticClass: "products" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: product.name,
+                          expression: "product.name"
                         }
-                        _vm.$set(product, "name", $event.target.value)
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "products" }, [
-                  _c("textarea", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: product.ingredients,
-                        expression: "product.ingredients"
-                      }
-                    ],
-                    staticClass: "products-input",
-                    attrs: {
-                      name: "ingredients",
-                      placeholder: "Ingredients",
-                      required: ""
-                    },
-                    domProps: { value: product.ingredients },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+                      ],
+                      staticClass: "border-b border-black mb-1",
+                      class: { errorBorder: _vm.form.errors.has("products") },
+                      attrs: {
+                        type: "text",
+                        name: "products",
+                        placeholder: "E.g. coffee"
+                      },
+                      domProps: { value: product.name },
+                      on: {
+                        keydown: function($event) {
+                          return _vm.form.errors.clear("products")
+                        },
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(product, "name", $event.target.value)
                         }
-                        _vm.$set(product, "ingredients", $event.target.value)
                       }
-                    }
-                  })
-                ]),
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "products" }, [
+                    _c("textarea", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: product.ingredients,
+                          expression: "product.ingredients"
+                        }
+                      ],
+                      staticClass: "border-b border-black mb-1",
+                      class: { errorBorder: _vm.form.errors.has("products") },
+                      attrs: {
+                        name: "products",
+                        placeholder: "E.g. ground coffee beans"
+                      },
+                      domProps: { value: product.ingredients },
+                      on: {
+                        keydown: function($event) {
+                          return _vm.form.errors.clear("products")
+                        },
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(product, "ingredients", $event.target.value)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "w-full text-center py-2 text-warning",
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.deleteItem(index)
+                        }
+                      }
+                    },
+                    [_vm._v("× Remove")]
+                  )
+                ])
+              }),
+              0
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "span",
+              {
+                staticClass: "button-wrap left-align",
+                attrs: { id: "add-product" }
+              },
+              [
+                _c("span", { staticClass: "button-background green-border" }),
                 _vm._v(" "),
                 _c(
-                  "button",
+                  "span",
                   {
-                    on: {
-                      click: function($event) {
-                        return _vm.deleteItem(index)
-                      }
-                    }
+                    staticClass: "button text-center cursor-pointer mt-4",
+                    on: { click: _vm.addItem }
                   },
-                  [_vm._v("×")]
+                  [_vm._v("+ Add")]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "font-sansBold text-3xl mt-8 leading-none" }, [
+          _vm._v("Stand options")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group my-8" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.stand_type,
+                expression: "form.stand_type"
+              }
+            ],
+            class: { errorBorder: _vm.form.errors.has("stand_type") },
+            attrs: {
+              type: "radio",
+              id: "stand-3m",
+              name: "stand_type",
+              value: "3x3 stand"
+            },
+            domProps: { checked: _vm._q(_vm.form.stand_type, "3x3 stand") },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("stand_type")
+              },
+              change: function($event) {
+                return _vm.$set(_vm.form, "stand_type", "3x3 stand")
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "ml-2", attrs: { for: "stand-3m" } }, [
+            _vm._v("3 × 2.5m stand")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.stand_type,
+                expression: "form.stand_type"
+              }
+            ],
+            class: { errorBorder: _vm.form.errors.has("stand_type") },
+            attrs: {
+              type: "radio",
+              id: "stand-3m-elec",
+              name: "stand_type",
+              value: "stand with electricity"
+            },
+            domProps: {
+              checked: _vm._q(_vm.form.stand_type, "stand with electricity")
+            },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("stand_type")
+              },
+              change: function($event) {
+                return _vm.$set(
+                  _vm.form,
+                  "stand_type",
+                  "stand with electricity"
+                )
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "ml-2", attrs: { for: "stand-3m-elec" } },
+            [_vm._v("3 × 2.5m stand + electricity")]
+          )
+        ]),
+        _vm._v(" "),
+        _vm.form.stand_type == "stand with electricity"
+          ? _c(
+              "div",
+              {
+                staticClass: "form-group mb-4",
+                attrs: { id: "appliance-type" }
+              },
+              [
+                _c("label", { attrs: { for: "appliance" } }, [
+                  _vm._v("What type of appliance(s) do you use?")
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.appliances,
+                      expression: "form.appliances"
+                    }
+                  ],
+                  staticClass: "border-b border-black mb-1",
+                  attrs: {
+                    type: "text",
+                    id: "appliance",
+                    name: "appliance",
+                    placeholder: "Eg. microwave, kettle"
+                  },
+                  domProps: { value: _vm.form.appliances },
+                  on: {
+                    keydown: function($event) {
+                      return _vm.form.errors.clear("appliances")
+                    },
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "appliances", $event.target.value)
+                    }
+                  }
+                })
+              ]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.use_gas,
+                expression: "form.use_gas"
+              }
+            ],
+            attrs: { type: "checkbox", id: "gas", name: "gas" },
+            domProps: {
+              checked: Array.isArray(_vm.form.use_gas)
+                ? _vm._i(_vm.form.use_gas, null) > -1
+                : _vm.form.use_gas
+            },
+            on: {
+              keydown: function($event) {
+                return _vm.form.errors.clear("use_gas")
+              },
+              change: function($event) {
+                var $$a = _vm.form.use_gas,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? true : false
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && _vm.$set(_vm.form, "use_gas", $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      _vm.$set(
+                        _vm.form,
+                        "use_gas",
+                        $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                      )
+                  }
+                } else {
+                  _vm.$set(_vm.form, "use_gas", $$c)
+                }
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "ml-2", attrs: { for: "gas" } }, [
+            _vm._v("I use gas. ")
+          ]),
+          _vm._v(" "),
+          _vm._m(9)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c(
+            "label",
+            { staticClass: "font-sansBold", attrs: { for: "social-media" } },
+            [_vm._v("Have you liked/are you following our social media pages?")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.social_media,
+                  expression: "form.social_media"
+                }
+              ],
+              class: { errorBorder: _vm.form.errors.has("social_media") },
+              attrs: { type: "radio", name: "social_media", value: "Yes" },
+              domProps: { checked: _vm._q(_vm.form.social_media, "Yes") },
+              on: {
+                keydown: function($event) {
+                  return _vm.form.errors.clear("social_yes")
+                },
+                change: function($event) {
+                  return _vm.$set(_vm.form, "social_media", "Yes")
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "ml-2", attrs: { for: "social_media" } },
+              [_vm._v("Yes")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.form.social_media,
+                  expression: "form.social_media"
+                }
+              ],
+              class: { errorBorder: _vm.form.errors.has("social_media") },
+              attrs: { type: "radio", name: "social_media", value: "No" },
+              domProps: { checked: _vm._q(_vm.form.social_media, "No") },
+              on: {
+                keydown: function($event) {
+                  return _vm.form.errors.clear("social_media")
+                },
+                change: function($event) {
+                  return _vm.$set(_vm.form, "social_media", "No")
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "ml-2", attrs: { for: "social_media" } },
+              [_vm._v("No")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-group mb-4" }, [
+          _c("p", { staticClass: "body-text" }, [
+            _vm._v(
+              "By submitting this form I agree to the Terms and Conditions."
+            )
+          ]),
+          _vm._v(" "),
+          _vm.form.errors.any()
+            ? _c("p", { staticClass: "py-4 text-2xl error" }, [
+                _vm._v(
+                  "\n                Oops! There were some issues with your submission. Please see errors below and scroll to the relevant fields highlighted in red to fix them.\n            "
                 )
               ])
-            }),
-            0
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.form.errors.any()
+            ? _c("ul", [
+                _vm.form.errors.has("stall_name")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("stall_name"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("name_surname")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("name_surname"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("car_reg")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("car_reg"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("phone")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("phone"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("email")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("email"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("address")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("address"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("produce_self")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("produce_self"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("products")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("products"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("stand_type")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("stand_type"))
+                      }
+                    })
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.form.errors.has("social_media")
+                  ? _c("li", {
+                      staticClass: "error",
+                      domProps: {
+                        textContent: _vm._s(_vm.form.errors.get("social_media"))
+                      }
+                    })
+                  : _vm._e()
+              ])
+            : _vm._e(),
+          _vm._v(" "),
           _c(
-            "span",
+            "button",
             {
-              staticClass: "button-wrap left-align",
-              attrs: { id: "add-product" }
+              staticClass: "button text-center cursor-pointer mt-4",
+              attrs: { type: "submit", value: "submit", id: "submit-btn" }
             },
-            [
-              _c("span", { staticClass: "button-background green-border" }),
-              _vm._v(" "),
-              _c(
-                "span",
-                { staticClass: "button bg-dg", on: { click: _vm.addItem } },
-                [_vm._v("+ Add")]
-              )
-            ]
+            [_vm._v("\n                Submit\n            ")]
           )
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "stripe bg-black mx-auto my-4" }),
-      _vm._v(" "),
-      _c("h2", [_vm._v("Stand options")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.stand_type,
-              expression: "form.stand_type"
-            }
-          ],
-          attrs: {
-            type: "radio",
-            id: "stand-3m",
-            name: "stand_3m",
-            value: "3x3 stand"
-          },
-          domProps: { checked: _vm._q(_vm.form.stand_type, "3x3 stand") },
-          on: {
-            change: function($event) {
-              return _vm.$set(_vm.form, "stand_type", "3x3 stand")
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "stand-3m" } }, [_vm._v("3x3m stand")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.stand_type,
-              expression: "form.stand_type"
-            }
-          ],
-          attrs: {
-            type: "radio",
-            id: "stand-3m-elec",
-            name: "stand_3m_elec",
-            value: "stand with electricity"
-          },
-          domProps: {
-            checked: _vm._q(_vm.form.stand_type, "stand with electricity")
-          },
-          on: {
-            change: function($event) {
-              return _vm.$set(_vm.form, "stand_type", "stand with electricity")
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "stand-3m-elec" } }, [
-          _vm._v("3x3m stand + electricity")
-        ])
-      ]),
-      _vm._v(" "),
-      _vm.form.stand_type == "stand with electricity"
-        ? _c(
-            "div",
-            { staticClass: "form-group", attrs: { id: "appliance-type" } },
-            [
-              _c("label", { attrs: { for: "appliance" } }, [
-                _vm._v("What type of appliance(s) do you use?")
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.appliances,
-                    expression: "form.appliances"
-                  }
-                ],
-                attrs: {
-                  type: "text",
-                  id: "appliance",
-                  name: "appliance",
-                  placeholder: "Eg. microwave"
-                },
-                domProps: { value: _vm.form.appliances },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.$set(_vm.form, "appliances", $event.target.value)
-                  }
-                }
-              })
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.form.use_gas,
-              expression: "form.use_gas"
-            }
-          ],
-          attrs: { type: "checkbox", id: "gas", name: "gas" },
-          domProps: {
-            checked: Array.isArray(_vm.form.use_gas)
-              ? _vm._i(_vm.form.use_gas, null) > -1
-              : _vm.form.use_gas
-          },
-          on: {
-            change: function($event) {
-              var $$a = _vm.form.use_gas,
-                $$el = $event.target,
-                $$c = $$el.checked ? true : false
-              if (Array.isArray($$a)) {
-                var $$v = null,
-                  $$i = _vm._i($$a, $$v)
-                if ($$el.checked) {
-                  $$i < 0 && _vm.$set(_vm.form, "use_gas", $$a.concat([$$v]))
-                } else {
-                  $$i > -1 &&
-                    _vm.$set(
-                      _vm.form,
-                      "use_gas",
-                      $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                    )
-                }
-              } else {
-                _vm.$set(_vm.form, "use_gas", $$c)
-              }
-            }
-          }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "gas" } }, [
-          _vm._v(
-            "I use gas. I have read and understand the regulations and will adhere to it."
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "gas-warning" }, [
-          _vm._v("If you use gas, a fire extinguisher is compulsory.")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "form-group" }, [
-        _c("label", { attrs: { for: "social-media" } }, [
-          _vm._v("Have you liked/are you following our social media pages?")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.social_media,
-                expression: "form.social_media"
-              }
-            ],
-            attrs: { type: "radio", name: "social_yes", value: "Yes" },
-            domProps: { checked: _vm._q(_vm.form.social_media, "Yes") },
-            on: {
-              change: function($event) {
-                return _vm.$set(_vm.form, "social_media", "Yes")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "social_yes" } }, [_vm._v("Yes")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "form-group" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.social_media,
-                expression: "form.social_media"
-              }
-            ],
-            attrs: { type: "radio", name: "social_no", value: "No" },
-            domProps: { checked: _vm._q(_vm.form.social_media, "No") },
-            on: {
-              change: function($event) {
-                return _vm.$set(_vm.form, "social_media", "No")
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "ocial_no" } }, [_vm._v("No")])
-        ])
-      ]),
-      _vm._v(" "),
-      _vm._m(1)
-    ]
-  )
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mb-8" }, [
+      _c("span", { staticClass: "required text-warning" }, [_vm._v("*")]),
+      _vm._v(" indicates required fields\n        ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "stall_name" } },
+      [
+        _vm._v("\n                Stall/Business name\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "name_surname" } },
+      [
+        _vm._v("\n                Name & surname\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "car_reg" } },
+      [
+        _vm._v("\n                Car registration nr\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "phone" } },
+      [
+        _vm._v("\n                Phone\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "email" } },
+      [
+        _vm._v("\n                Email\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "label",
+      { staticClass: "font-sansBold", attrs: { for: "address" } },
+      [
+        _vm._v("\n                Your address\n                "),
+        _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "mt-2" }, [
+      _vm._v(
+        "\n            Do you, the applicant, produce your products?\n            "
+      ),
+      _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", [_vm._v("Products")]),
+        _c("th", [
+          _vm._v(
+            "\n                            Products\n                            "
+          ),
+          _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+        ]),
         _vm._v(" "),
-        _c("th", [_vm._v("Ingredients")])
+        _c("th", [
+          _vm._v(
+            "\n                            Ingredients\n                            "
+          ),
+          _c("span", { staticClass: "required text-warning" }, [_vm._v("*")])
+        ])
       ])
     ])
   },
@@ -38479,22 +39054,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("p", { staticClass: "body-text" }, [
-        _vm._v("By submitting this form I agree to the Terms and Conditions.")
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "form-submit-button button-wrap left-align",
-          attrs: { type: "submit", value: "submit" }
-        },
-        [
-          _c("span", { staticClass: "button-background green-border" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "button-text green" }, [_vm._v("Submit")])
-        ]
+    return _c("p", { staticClass: "text-warning italic mt-2 text-xs" }, [
+      _vm._v(
+        "\n                I have read and understand the regulations and will adhere to it.\n                "
+      ),
+      _c("br"),
+      _vm._v(
+        "If you use gas, a fire extinguisher is compulsory.\n                "
       )
     ])
   }
@@ -38522,13 +39088,15 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "mt-8" },
+    { staticClass: "mt-8", attrs: { id: "trade_terms" } },
     [
       _vm._l([_vm.currentIndex], function(i) {
         return _c("div", { key: i }, [
           _c("p", { staticClass: "font-sansBold text-2xl" }, [
             _vm._v(
               _vm._s(_vm.currentIndex + 1) +
+                " / " +
+                _vm._s(_vm.slides.length) +
                 ". " +
                 _vm._s(_vm.currentSlide.title)
             )
@@ -38546,7 +39114,7 @@ var render = function() {
           ? _c(
               "a",
               {
-                staticClass: "prev",
+                staticClass: "prev button bg-black",
                 attrs: { href: "#" },
                 on: {
                   click: function($event) {
@@ -38563,7 +39131,7 @@ var render = function() {
           ? _c(
               "a",
               {
-                staticClass: "next self-end",
+                staticClass: "next self-end button bg-black",
                 attrs: { href: "#" },
                 on: {
                   click: function($event) {

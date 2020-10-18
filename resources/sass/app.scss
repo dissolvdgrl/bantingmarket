@@ -177,6 +177,10 @@ body {
     }
 }
 
+.active-link {
+    font-family: $din_bold;
+}
+
 .link-back {
     color: $dark-green;
     font-weight: bold;
@@ -241,6 +245,8 @@ header {
 #content-container {
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
+    max-width: 1024px;
 }
 
 /* .container {
@@ -292,6 +298,12 @@ header {
     }
 }
 
+.vendors-container {
+    .card {
+        max-width: 348px;
+    }
+}
+
 // Card
 
 .card {
@@ -335,6 +347,21 @@ header {
     cursor: pointer;
 }
 
+.mc-field-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: $red;
+    font-family: $din_bold;
+}
+
+.errorBorder {
+    border: 1px solid $red;
+    box-shadow: 0px 0px 3px $red;
+}
+
 // Footer
     footer {
         background-image: url('../../images/flowers_footer.svg');
@@ -371,8 +398,10 @@ header {
 // Recipes
     .recipes-container {
         .card {
+            max-width: 348px;
             overflow: hidden;
             img {
+                width: 100%;
                 max-width: 348px;
             }
         }
@@ -458,7 +487,21 @@ header {
         }
     }
 
+    .app-form-no-sell {
+        list-style-type: none;
+        padding-left: 0;
 
+        li {
+            display: flex;
+        }
+
+        li::before {
+            content: "\00D7";
+            font-weight: bold;
+            color: $red;
+            margin-right: 1rem;
+        }
+    }
 
     .prev, .next {
         margin-top: 50px;
@@ -506,6 +549,17 @@ header {
 
         td:first-child {
             font-weight: 700;
+        }
+    }
+
+    #application-form {
+        width: 100%;
+        input, textarea {
+            display: block;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            display: inline-block;
         }
     }
 

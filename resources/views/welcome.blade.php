@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-    <section class="cards-container mt-8 mb-16 grid">
+    <section id="home" class="cards-container mt-8 mb-16 grid">
         <x-card
             titleSmall="How do I"
             title="Get there?"

@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
-@section('content')
+@section('header')
+
     <a href="{{ URL::previous() }}" class="link-back mb-4">Go back</a>
+    <h1 class="justify-self-start">{{ $recipe->name }}</h1>
     <img src="/images/recipes/{{ $recipe->image }}" alt="" class="recipe-img mb-4">
-    <h1>{{ $recipe->name }}</h1>
-    <div class="stripe bg-black my-4"></div>
+@endsection
+
+@section('content')
     <div class="recipe-content">
         {!! $recipe->content !!}
     </div>
