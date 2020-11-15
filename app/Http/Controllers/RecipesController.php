@@ -1,5 +1,5 @@
 <?php
-
+// https://github.com/amaelftah/laravel-trix
 namespace App\Http\Controllers;
 
 use App\Recipe;
@@ -19,8 +19,21 @@ class RecipesController extends Controller
      */
     public function index()
     {
-        $recipes = Recipe::all();
+        $recipes = Recipe::select('image', 'name', 'slug')->get();
         return view('recipes.index', compact('recipes'));
+    }
+
+    /**
+     * Show the page for browsing all the vendors
+     *
+     * @return \Illuminate\Http\Response
+     */
+
+    public function browse()
+    {
+        $recipes = Recipe::all();
+
+        return view('recipes.browse', compact('recipes'));
     }
 
     /**
@@ -30,7 +43,7 @@ class RecipesController extends Controller
      */
     public function create()
     {
-        //
+        return view('recipes.create');
     }
 
     /**
@@ -41,7 +54,7 @@ class RecipesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $recipe = new Recipe;
     }
 
     /**

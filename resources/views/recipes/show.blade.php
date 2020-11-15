@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $recipe->name)
+
 @section('header')
 
     <a href="{{ URL::previous() }}" class="link-back mb-4">Go back</a>

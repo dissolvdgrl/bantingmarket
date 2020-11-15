@@ -7,7 +7,7 @@
     <h1 class="justify-self-start">Our mission is to <span class="font-bold">connect
         you with local producers.</span></h1>
     <div class="bg-black sub-heading p-4 justify-self-start">
-        <p class="text-white">Every 1st and 3rd Saturday</p>
+        <p class="text-white">Every 1st Saturday of the month</p>
         <img src="{{ asset('/images/flowers_2.svg') }}" alt="decorative flowers illustration">
     </div>
 @endsection

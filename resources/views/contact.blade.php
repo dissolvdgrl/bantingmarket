@@ -21,21 +21,26 @@
             @honeypot
             <h1 class="uppercase">Contact form</h1>
             <div class="form-group flex flex-col mt-4">
-                <input type="text" name="firstname" class="border-b border-black mb-1" placeholder="Jane Smith">
+                <input type="text" name="firstname" class="border-b border-black mb-1" placeholder="Jane Smith" required>
                 <label for="firstname" class="font-sansBold">Name <span class="required text-warning">*</span> </label>
             </div>
             <div class="form-group flex flex-col mt-4">
-                <input type="email" name="email_address" class="border-b border-black mb-1" placeholder="jane@example.com">
+                <input type="email" name="email_address" class="border-b border-black mb-1" placeholder="jane@example.com" required>
                 <label for="email_address" class="font-sansBold">Email address <span class="required text-warning">*</span> </label>
             </div>
             <div class="form-group flex flex-col mt-4">
-                <input type="text" name="msg_subject" class="border-b border-black mb-1" placeholder="Question about parking">
+                <input type="text" name="msg_subject" class="border-b border-black mb-1" placeholder="Question about parking" required>
                 <label for="msg_subject" class="font-sansBold">Subject <span class="required text-warning">*</span> </label>
             </div>
             <div class="form-group flex flex-col mt-4">
-                <textarea type="textarea" name="msg_body" class="border-b border-black mb-1" placeholder="Please type your message here..." minlength="24"></textarea>
+                <textarea type="textarea" name="msg_body" class="border-b border-black mb-1" placeholder="Please type your message here..." minlength="24" required></textarea>
                 <label for="msg_body" class="font-sansBold">Message <span class="required text-warning">*</span> </label>
             </div>
+
+            <div class="form-group flex flex-col mt-4">
+                <div class="h-captcha" data-sitekey="{{ env('H_CAPTCHA_KEY')}}"></div>
+            </div>
+
             <div class="form-group flex flex-col mt-8 items-start">
                 <button type="submit" class="submit-btn p-2">Submit</button>
             </div>
@@ -56,4 +61,8 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
 @endsection

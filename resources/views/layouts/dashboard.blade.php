@@ -11,12 +11,19 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @trixassets
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="dashboard-container">
         @include('includes.dashnav')
 
-        <main id="content-container" class="mt-32">
+        <header class="mt-16">
+            <div class="grid">
+                @yield('header')
+            </div>
+        </header>
+
+        <main class="mt-16">
             <div class="container mx-auto my-8 w-4/5">
                 @yield('content')
             </div>
@@ -33,8 +40,6 @@
                     <a href="/recipes" class="text-white">Recipes</a>
                     <span class="text-lg mx-4">&#8212;</span>
                     <a href="/vendors" class="text-white">Vendors</a>
-                    <span class="text-lg mx-4">&#8212;</span>
-                    <a href="/recipes" class="text-white">Recipes</a>
                     <span class="text-lg mx-4">&#8212;</span>
                     <a href="/apply" class="text-white">Apply</a>
                     <span class="text-lg mx-4">&#8212;</span>

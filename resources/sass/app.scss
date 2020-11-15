@@ -448,6 +448,48 @@ header {
         }
     }
 
+    #switch {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    #switch_label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 64px;
+        height: 34px;
+        background: $red;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+    }
+
+    #switch:checked + #switch_label {
+        background: $dark-green;
+    }
+
+    #switch:checked + #switch_label:after {
+        left: calc(100% - 1px);
+        transform: translateX(-100%);
+    }
+
+    #switch:active:after {
+        width: 130px;
+    }
+
 // Vendor application
     .vendor-form-container {
         ul li {
@@ -601,6 +643,28 @@ header {
 
         td:nth-of-type(1):before { content: "Product name"; font-family: $din_bold; }
 	    td:nth-of-type(2):before { content: "Ingredients"; font-family: $din_bold; }
+    }
+
+    .alert-success {
+        box-shadow: $drop-shadow;
+    }
+
+    .dashnav {
+        .nav-link {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .dashboard-container {
+        header {
+            max-width: none;
+        }
+    }
+
+    .dash-vendors-container {
+        img {
+            max-width: 100px;
+        }
     }
 
 

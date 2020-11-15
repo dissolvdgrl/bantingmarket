@@ -32,8 +32,9 @@ const app = new Vue({
     data: {
         menuText: "Menu",
         slug: '',
-        understand: true,
-        terms: true
+        understand: false,
+        terms: false,
+        logo: false
     },
 
     methods: {
@@ -45,7 +46,12 @@ const app = new Vue({
         },
 
         slugify() {
+            console.log(document.querySelector('#recipe_name').value);
             this.slug = document.querySelector('#recipe_name').value.toLowerCase().replace(/[^\w ]+/g,'').replace(/ +/g,'-');
+        },
+
+        newLogo() {
+            this.logo = true;
         }
     }
 });

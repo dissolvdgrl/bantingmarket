@@ -6,7 +6,7 @@
     <p class="header-small justify-self-start">Brooklyn Mall, Pretoria</p>
     <h1 class="justify-self-start">Your one-stop <span class="font-bold">banting, keto and low carb market!</span></h1>
     <div class="bg-black sub-heading p-4 justify-self-start">
-        <p class="text-white">Every 1st and 3rd Saturday</p>
+        <p class="text-white">Every 1st Saturday of the month</p>
         <img src="{{ asset('/images/flowers_2.svg') }}" alt="decorative flowers illustration">
     </div>
 @endsection

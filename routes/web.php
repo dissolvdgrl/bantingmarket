@@ -17,22 +17,24 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 */
 
 Route::get('/', function() {
-    $vendors = Vendor::select('logo')->inRandomOrder()->limit(4)->get();
+    $vendors = Vendor::select('logo')->where('status', 1)->inRandomOrder()->limit(4)->get();
     return view('welcome', compact('vendors'));
 });
 
 Route::view('/info', 'info');
+Route::get('/vendors/browse', 'VendorsController@browse')->middleware('auth');
 Route::resource('/vendors', 'VendorsController');
 Route::view('/contact', 'contact');
-Route::post('/contact', 'FormsController@contact')
-    ->middleware('throttle:1,60')
+Route::post('/contact', 'FormsController@contactForm')
     ->middleware(ProtectAgainstSpam::class);
 
 Route::View('/apply', 'apply');
-Route::post('/apply', 'FormsController@apply')/*->middleware('throttle:1,1440') */;
+Route::post('/apply', 'FormsController@apply')->middleware('throttle:1,1440');
 
+Route::get('/recipes/browse', 'RecipesController@browse')->middleware('auth');
 Route::resource('/recipes', 'RecipesController');
 
-Auth::routes();
+Route::post('login', 'LoginController@login')->middleware('throttle:3,1400');
+Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');

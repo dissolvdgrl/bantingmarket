@@ -14,6 +14,19 @@
 </head>
 <body>
     <div id="app">
+        @if (session('status'))
+            <div class="alert alert-success bg-lg py-4">
+                <p class="text-2xl font-sansBold text-black text-center">{{ session('status') }}</p>
+            </div>
+        @endif
+        @if ($errors->any())
+            <div class="alert alert-success bg-warning py-4">
+                    @foreach ($errors->all() as $error)
+                        <p class="font-sans text-white text-center">{{ $error }}</p>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         @include('includes.nav')
 
         <header class="site-header">
@@ -30,7 +43,7 @@
         <footer class="bg-black p-8">
             <div class="container w-4/5 mx-auto">
                 <p class="text-xl text-white text-center">Join us at Brooklyn Mall for the highest quality banting, keto and all kinds of LCHF foods. Gluten-free, wheat-free and sugar-free!</p>
-                <p class="text-sm text-white text-center my-8">Brooklyn Mall is the new home for the Pretoria Banting Market, every first and third Saturday.</p>
+                <p class="text-sm text-white text-center my-8">Brooklyn Mall is the new home for the Pretoria Banting Market, every first Saturday of the month.</p>
                 <nav class="footer-nav">
                     <a href="/" class="text-white">Home</a>
                     <span class="text-lg mx-4">&#8212;</span>
@@ -39,8 +52,6 @@
                     <a href="/recipes" class="text-white">Recipes</a>
                     <span class="text-lg mx-4">&#8212;</span>
                     <a href="/vendors" class="text-white">Vendors</a>
-                    <span class="text-lg mx-4">&#8212;</span>
-                    <a href="/recipes" class="text-white">Recipes</a>
                     <span class="text-lg mx-4">&#8212;</span>
                     <a href="/apply" class="text-white">Apply</a>
                     <span class="text-lg mx-4">&#8212;</span>
@@ -59,5 +70,6 @@
         </footer>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>
