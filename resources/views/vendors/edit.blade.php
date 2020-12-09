@@ -17,7 +17,7 @@
     @endif
     <a href="/vendors/browse" class="link-back">Back to dashboard</a>
     <h1 class="mb-8">Editing vendor</h1>
-    <form method="POST" action="{{ route('vendors.update', $vendor->id)}}" enctype="multipart/form-data" class="w-1/2">
+    <form method="POST" action="{{ route('vendors.update', $vendor->id) }}" enctype="multipart/form-data" class="w-1/2">
         @method('PATCH')
         @csrf
         <div class="form-group flex flex-col mb-4">

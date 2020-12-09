@@ -1,8 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('extra-head-content')
-<link rel="stylesheet" type="text/css" href="css/trix.css">
-<script type="text/javascript" src="js/trix.js"></script>
+    @trixassets
 @endsection
 
 @section('title', 'Create Recipe')
@@ -33,7 +32,7 @@
                 class="border-b border-black mb-1 bg-transparent"
                 @change="slugify()"
                 required>
-                <input type="hidden" value="" v-model="slug" id="slug">
+                <input type="hidden" value="" v-model="slug" id="slug" name="slug">
             <label for="recipe_name" class="font-sansBold">
                 Recipe name
                 <span class="required text-warning">*</span>
@@ -47,7 +46,7 @@
                 name="image"
                 class="border-b border-black mb-1 bg-transparent">
             <label for="image" class="font-sansBold">
-                Image (will be resized to 500px )
+                Image (will be resized to 348px by 200px )
             </label>
         </div> <!-- image end -->
 
