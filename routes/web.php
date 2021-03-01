@@ -29,7 +29,7 @@ Route::post('/contact', 'FormsController@contactForm')
     ->middleware(ProtectAgainstSpam::class);
 
 Route::View('/apply', 'apply');
-Route::post('/apply', 'FormsController@apply')->middleware('throttle:1,1440');
+Route::post('/apply', 'FormsController@apply')/* ->middleware('throttle:1,1440') */;
 
 Route::get('/recipes/browse', 'RecipesController@browse')->middleware('auth');
 Route::resource('/recipes', 'RecipesController');

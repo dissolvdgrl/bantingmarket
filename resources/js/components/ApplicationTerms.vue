@@ -45,7 +45,7 @@ export default {
                             <li>Additions and alterations to your product range MUST be approved by management.</li>
                             <li>When you receive an acceptance e-mail, your booking is only secured on payment of required stall fee.</li>
                             <li>Stall fees must be paid in advance via electronic transfer, not later than the Monday preceding the market.</li>
-                            <li>Cash payments on market day must be approved by management at least a week before the market date. An additional admin fee of R30 will be charged on ALL cash payments.</li>
+                            <li>Cash payments on market day must be approved by management at least a week before the market date. An additional admin fee of R50 will be charged on ALL cash payments.</li>
                             <li>Once you have been accepted, you have been approved permanently and are expected to attend both markets every month.</li>
                         </ul>
                     `
@@ -55,11 +55,11 @@ export default {
                     content: `
                         <ul class="list-disc pl-4">
                             <li>The cost of a stall is as follows:<br>
-                                <p class="font-sansBold">3x2.5m stand</p>
-                                <p>R300 per Saturday, add R30 for cash payments on the day of the market.</p>
+                                <p class="font-sansBold">3x3m stand</p>
+                                <p>R300 per Saturday, add R50 for cash payments on the day of the market.</p>
                                 <hr class="my-4">
-                                <p class="font-sansBold">3x2.5m stand + electricity</p>
-                                <p>R380 per Saturday, add R30 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>
+                                <p class="font-sansBold">3x3m stand + electricity</p>
+                                <p>R380 per Saturday, add R50 for cash payments on the day of the market. Please bring own extension cord. What type of appliance will you be using?</p>
                             </li>
                             <li>Fees go towards costs of venue rent, administration, marketing, salaries for workers to set-up on day, security, music entertainment and development of the market.</li>
                         </ul>
@@ -70,11 +70,11 @@ export default {
                     content: `
                         <ul class="list-disc pl-4">
                             <li>Market trading hours are from <strong>9am to 2pm</strong>.</li>
-                            <li>Set up from 6am until 8:15am.</li>
+                            <li>Set up from 6am until 8:00am.</li>
                             <li>Vehicles may enter the market area and unload directly at your stall area after which the vehicle <strong>must then be moved to the designated parking area</strong>.</li>
-                            <li>No entry after <strong>8:15am</strong> for traders’ vehicles to offload at the market.</li>
-                            <li>Vehicle must be unloaded and moved to designated trader parking area before <strong>8:15am</strong>.</li>
-                            <li>Traders arriving after 8:15am must park in the parking area and convey all the contents of their stalls on foot. You will not be allowed to unload directly at your stall.</li>
+                            <li>No entry after <strong>8:00am</strong> for traders’ vehicles to offload at the market.</li>
+                            <li>Vehicle must be unloaded and moved to designated trader parking area before <strong>8:00am</strong>.</li>
+                            <li>Traders arriving after 8:00am must park in the parking area and convey all the contents of their stalls on foot. You will not be allowed to unload directly at your stall.</li>
                             <li>No cars allowed behind or near your stall. The market and surrounding area is to be kept car-free to ensure space for the clients.</li>
                             <li>Traders who do not adhere to this rule, will receive a warning. A second warning at the next market, can result in losing your place at the market and not be allowed back at the market.</li>
                             <li>Your stall must be fully set-up by <strong>8:45am</strong>. Be prepared for the early-bird clients even as early as 8am.</li>
