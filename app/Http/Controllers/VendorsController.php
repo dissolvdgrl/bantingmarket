@@ -24,7 +24,7 @@ class VendorsController extends Controller
      */
     public function index()
     {
-        $vendors = Vendor::select('name', 'logo', 'website', 'description')->where('status', 1)->get();
+        $vendors = Vendor::select('name', 'logo', 'website', 'description', 'email')->where('status', 1)->get();
 
         return view('vendors.index', compact('vendors'));
     }
